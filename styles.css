@@ -360,4 +360,93 @@
     text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
     line-height: 1.6;
   }
-  
+  /* ========== Team Section ========== */
+
+.team {
+  font-family: "Poppins", sans-serif;
+  padding: 50px 0;
+  background-color: #000000;
+}
+
+.team .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.team .section__header {
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.team .column {
+  display: flex;
+  justify-content: center;
+}
+
+.team .card {
+  background-color: #1A1A1A;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  text-align: center;
+  padding: 2rem 1rem;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 100%;
+  max-width: 300px;
+}
+
+.team .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 20px #FF914D;
+}
+
+.team .img {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.team .img img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--primary-color);
+}
+
+.team h3 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.team p {
+  color: #B1B1B1;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.team .icons {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.team .icons a {
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.team .icons a:hover {
+  color: #ffffff;
+}
