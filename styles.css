@@ -209,6 +209,7 @@
 .header__title {
     background: linear-gradient(90deg, #7ed56f, #ffd700);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     font-size: 1.5rem;
     font-weight: bold;
@@ -419,12 +420,14 @@ header::before {
 .header-text h1 {
     background: linear-gradient(90deg, #7ed56f, #ffd700);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
 .span1 {
     background: linear-gradient(90deg, #7ed56f, #ffd700);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
 }
 
@@ -1394,6 +1397,7 @@ button:hover {
 .dashboard-subtitle {
     background: linear-gradient(90deg, #7ed56f, #ffd700);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
     font-size: 40px;
     display: block;
@@ -1406,6 +1410,7 @@ button:hover {
 .dashboard-description {
     background: linear-gradient(90deg, #7ed56f, #ffd700);
     -webkit-background-clip: text;
+    background-clip: text;
     font-size: 20px;
     line-height: 1.5;
     color: #333333;
