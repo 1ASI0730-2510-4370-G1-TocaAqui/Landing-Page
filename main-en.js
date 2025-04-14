@@ -46,7 +46,7 @@ btnSpaces.addEventListener('click', () => {
   plansArtists.style.display = 'none';
   btnSpaces.classList.remove('btn-secondary');
   btnArtists.classList.add('btn-secondary');
-  title.textContent = 'Space Plans';
+  title.textContent = 'Venue Plans';
 });
 
 btnArtists.addEventListener('click', () => {
