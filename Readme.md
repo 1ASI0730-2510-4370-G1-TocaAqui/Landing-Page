@@ -33,7 +33,7 @@ Implementación de diseño adaptativo para:
 - Eddo Su Caletti
 ## 📊 Estado del Proyecto
 Versión actual: 1.0.0
-Última actualización: Mayo 2024
+Última actualización: Mayo 2025
 ## 📝 Documentación
 Para más detalles sobre la implementación y estructura del proyecto, consultar la carpeta `/docs`.
 ## 🎓 Curso y Universidad
