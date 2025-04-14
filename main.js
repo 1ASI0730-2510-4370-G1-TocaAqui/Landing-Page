@@ -34,3 +34,25 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Formulario enviado!');
     });
 });
+
+const btnSpaces = document.getElementById('btn-spaces');
+const btnArtists = document.getElementById('btn-artists');
+const plansSpaces = document.getElementById('plans-spaces');
+const plansArtists = document.getElementById('plans-artists');
+const title = document.getElementById('membership-title');
+
+btnSpaces.addEventListener('click', () => {
+  plansSpaces.style.display = 'grid';
+  plansArtists.style.display = 'none';
+  btnSpaces.classList.remove('btn-secondary');
+  btnArtists.classList.add('btn-secondary');
+  title.textContent = 'Planes para Espacios';
+});
+
+btnArtists.addEventListener('click', () => {
+  plansSpaces.style.display = 'none';
+  plansArtists.style.display = 'grid';
+  btnArtists.classList.remove('btn-secondary');
+  btnSpaces.classList.add('btn-secondary');
+  title.textContent = 'Planes para Artistas';
+});
