@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en" dir="ltr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Toca Aqui</title>
-
+    <title>Play Here</title>
 
     <!--Links-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
@@ -21,28 +21,26 @@
 </head>
 
 <!--=============== NAV ===============-->
-<nav>
+<nav role="navigation" aria-label="Main navigation">
     <div class="nav__header">
         <div class="nav__logo">
-            <a href="#" class="logo">
-                <img src="assets/logo-oscuro.png" alt="logo" />
+            <a href="#" class="logo" aria-label="Play Here Logo">
+                <img src="assets/logo-oscuro.png" alt="Play Here Logo"/>
             </a>
         </div>
-        <div class="nav__menu__btn" id="menu-btn">
-            <span><i class="ri-menu-line"></i></span>
+        <div class="nav__menu__btn" id="menu-btn" role="button" aria-expanded="false" aria-controls="nav-links" aria-label="Navigation menu">
+            <span class="material-icons">menu</span>
         </div>
     </div>
-    <ul class="nav__links" id="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about-us">About Us</a></li>
-        <li><a href="#package">Packages</a></li>
-
-        <li><a href="#contact">Contact Us</a></li>
+    <ul class="nav__links" id="nav-links" role="menubar">
+        <li role="none"><a href="#home" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about-us" role="menuitem">About Us</a></li>
+        <li role="none"><a href="#package" role="menuitem">Plans</a></li>
+        <li role="none"><a href="#contact" role="menuitem">Contact Us</a></li>
     </ul>
-    <div class="nav__btns">
-        <button class="btn language" onclick="window.location.href='index-es.html'">ES</button>
-        <button class="btn sign__up" onclick="window.location.href=''  ">Start
-            Now</button>
+    <div class="nav__btns" role="group" aria-label="Action buttons">
+        <button class="btn language" onclick="window.location.href='index-es.html'" aria-label="Switch to Spanish">ES</button>
+        <button class="btn sign__up" onclick="window.location.href=''" aria-label="Get Started">Get Started</button>
     </div>
 </nav>
 <!--=============== HOME ===============-->
@@ -370,11 +368,11 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Social Networking</h4>
+                    <h4>Social Media</h4>
                     <ul>
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">LinkedIn</a></li>
+                        <li><a href="#"><span class="mdi mdi-facebook"></span> Facebook</a></li>
+                        <li><a href="#"><span class="mdi mdi-instagram"></span> Instagram</a></li>
+                        <li><a href="#"><span class="mdi mdi-linkedin"></span> LinkedIn</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
