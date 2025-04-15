@@ -82,6 +82,17 @@
         cursor: pointer;
     }
 
+    .nav__menu__btn .material-icons {
+        font-size: 24px;
+        display: block;
+        text-transform: none;
+        letter-spacing: normal;
+        word-wrap: normal;
+        white-space: nowrap;
+        direction: ltr;
+        color: var(--primary-color);
+    }
+
     .nav__links {
         position: absolute;
         top: 100%;
