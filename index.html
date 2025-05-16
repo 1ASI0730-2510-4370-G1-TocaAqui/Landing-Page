@@ -18,6 +18,9 @@
     <meta name="keywords" content="School logistic app" />
     <meta name="author" content="ProDevs" />
     <link rel="icon" type="assets/png" href="assets/logo-oscuro-t.png">
+    
+    <!-- Script de traducciones -->
+    <script src="js/translations.js"></script>
 </head>
 
 <!--=============== NAV ===============-->
@@ -33,55 +36,53 @@
         </div>
     </div>
     <ul class="nav__links" id="nav-links" role="menubar">
-        <li role="none"><a href="#home" role="menuitem">Home</a></li>
-        <li role="none"><a href="#about-us" role="menuitem">About Us</a></li>
-        <li role="none"><a href="#package" role="menuitem">Plans</a></li>
-        <li role="none"><a href="#contact" role="menuitem">Contact Us</a></li>
+        <li role="none"><a href="#home" data-i18n="nav-home" role="menuitem">Home</a></li>
+        <li role="none"><a href="#about-us" data-i18n="nav-about" role="menuitem">About Us</a></li>
+        <li role="none"><a href="#package" data-i18n="nav-plans" role="menuitem">Plans</a></li>
+        <li role="none"><a href="#contact" data-i18n="nav-contact" role="menuitem">Contact Us</a></li>
     </ul>
     <div class="nav__btns" role="group" aria-label="Action buttons">
-        <button class="btn language" onclick="window.location.href='index-es.html'" aria-label="Switch to Spanish">ES</button>
-        <button class="btn sign__up" onclick="window.location.href=''" aria-label="Get Started">Get Started</button>
+        <button class="btn language" onclick="toggleLanguage()" aria-label="Switch language">EN</button>
+        <button class="btn sign__up" data-i18n="btn-get-started" onclick="window.location.href='https://tocaaqui-frontend.vercel.app/'" aria-label="Get Started">Get Started</button>
     </div>
 </nav>
-<!--=============== HOME ===============-->
 
+<!--=============== HOME ===============-->
 <div class="section__container fullwidth header__container header" id="home" style="border-radius: 0px;">
     <div class="header__content header__title">
-        <h1 class="header__main-title">Where Musicians and Stages Meet</h1>
-        <p class="section__description">
+        <h1 class="header__main-title" data-i18n="header-title">Where Musicians and Stages Meet</h1>
+        <p class="section__description" data-i18n="header-description-1">
             Are you part of a band that wants to play live?
             Do you have a bar or cultural space and are looking for talent?
-            <br><br>
+        </p>
+        <p class="section__description" data-i18n="header-description-2">
             At <strong>TocaAquí</strong> we connect artists with venues in a safe, organized and uncomplicated way.
         </p>
-        <p class="section__description" style="font-size: 1.2em; color: #ffd700; margin: 20px 0;">
+        <p class="section__description" style="font-size: 1.2em; color: #ffd700; margin: 20px 0;" data-i18n="header-join">
             Join today and be part of the largest music community! Over 1000 artists and venues already trust us.
         </p>
         <div class="header__btns">
-            <button class="btn" onclick="window.location.href=''  ">I'm an Artist</button>
-            <button class="btn" onclick="window.location.href=''  ">I'm a Venue</button>
+            <button class="btn" data-i18n="btn-artist" onclick="window.location.href=''">I'm an Artist</button>
+            <button class="btn" data-i18n="btn-venue" onclick="window.location.href=''">I'm a Venue</button>
         </div>
     </div>
 </div>
 
-
-
 <!--=============== ABOUT 1 ===============-->
 <div class="about__background">
     <section class="about__section" id="about-us">
-
         <div class="about__content">
-            <h2 class="section__header">About Us</h2>
-            <p>
+            <h2 class="section__header" data-i18n="about-title">About Us</h2>
+            <p data-i18n="about-p1">
                 <strong>TocaAquí</strong> is a platform that connects emerging musicians with bars, clubs and event
                 promoters. We facilitate direct booking, venue management and promotion of musical events in one place.
             </p>
-            <p>
+            <p data-i18n="about-p2">
                 Our platform allows venues to publish available dates and receive band applications according to style,
                 location and affinity. Musicians can schedule performances, sign digital contracts and receive secure
                 payments.
             </p>
-            <p>
+            <p data-i18n="about-p3">
                 We automate key processes such as technical validation, shared scheduling, digital ticket generation and
                 post-event evaluation, creating a seamless and secure experience for artists and organizers.
             </p>
@@ -90,7 +91,6 @@
         <div class="about__image" style="width: 500px;">
             <img src="assets/about.png" alt="about">
         </div>
-
     </section>
 </div>
 
@@ -98,17 +98,17 @@
 
 <section class="team" id="team">
     <div class="row">
-        <h2 class="section__header">Our Development Team</h2>
+        <h2 class="section__header" data-i18n="team-title">Our Development Team</h2>
     </div>
     <div class="row">
 
-        <div cla.,ss="column">
+        <div class="column">
             <div class="card">
                 <div class="img">
                     <img src="assets/Nelson.jpg" alt="foto_nelson">
                 </div>
                 <h3>Nelson Pereira</h3>
-                <p>Developer</p>
+                <p data-i18n="team-role">Developer</p>
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -124,7 +124,7 @@
                     <img src="assets/oscar.jpeg" alt="foto_oscar">
                 </div>
                 <h3>Oscar Antayhua</h3>
-                <p>Developer</p>
+                <p data-i18n="team-role">Developer</p>
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -140,7 +140,7 @@
                     <img src="assets/juan.jpg" alt="foto_juan">
                 </div>
                 <h3>Juan Llamccaya</h3>
-                <p>Developer</p>
+                <p data-i18n="team-role">Developer</p>
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -156,7 +156,7 @@
                     <img src="assets/diego.jpg" alt="foto_diego">
                 </div>
                 <h3>Diego Cabrera</h3>
-                <p>Developer</p>
+                <p data-i18n="team-role">Developer</p>
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -171,8 +171,8 @@
                 <div class="img">
                     <img src="assets/eddo.jpg" alt="foto_eddo">
                 </div>
-                <h3>Eddo Su Caletti </h3>
-                <p>Developer</p>
+                <h3>Eddo Su Caletti</h3>
+                <p data-i18n="team-role">Developer</p>
                 <div class="icons">
                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                     <a href=""><i class="fa-brands fa-linkedin"></i></a>
@@ -189,24 +189,22 @@
 
 <!--=============== ABOUT 2 ===============-->
 <section class="section__container experience__container">
-    <h2 class="section__header">Key tools to play live without complications</h2>
+    <h2 class="section__header" data-i18n="features-title">Key tools to play live without complications</h2>
     <div class="experience__content">
         <div class="experience__card card-1">
-            <h4>Free Dates Calendar</h4>
+            <h4 data-i18n="feature-1-title">Free Dates Calendar</h4>
             <p></p>
-            <p>Venues post available dates and bands apply based on affinity, location and musical style
-                . </p>
+            <p data-i18n="feature-1-desc">Venues post available dates and bands apply based on affinity, location and musical style.</p>
         </div>
         <div class="experience__card card-2">
-            <h4>Digital Contracts & Secure Payments</h4>
+            <h4 data-i18n="feature-2-title">Digital Contracts & Secure Payments</h4>
             <p></p>
-            <p>Instant contract signing and escrow payments for added security. </p>
+            <p data-i18n="feature-2-desc">Instant contract signing and escrow payments for added security.</p>
         </div>
         <div class="experience__card card-3">
-            <h4>Logistics Manager</h4>
+            <h4 data-i18n="feature-3-title">Logistics Manager</h4>
             <p></p>
-            <p>Upload your technical rider, schedule soundchecks and coordinate everything with the venue from the same
-                platform. </p>
+            <p data-i18n="feature-3-desc">Upload your technical rider, schedule soundchecks and coordinate everything with the venue from the same platform.</p>
         </div>
         <div class="experience__card card-4">
             <h4>Logistics Manager</h4>
@@ -223,14 +221,14 @@
 
 <section class="membership" id="package">
     <div class="section__container membership__container">
-        <h2 class="section__header">Select your ideal plan</h2>
+        <h2 class="section__header" data-i18n="plans-title">Select your ideal plan</h2>
 
         <!-- Botones de selector -->
         <div style="display: flex; justify-content: center; gap: 1rem; margin-bottom: 2rem;">
-            <button class="btn" id="btn-spaces">For Venues</button>
-            <button class="btn btn-secondary" id="btn-artists">For Artists</button>
+            <button class="btn" id="btn-spaces" data-i18n="btn-venues">For Venues</button>
+            <button class="btn btn-secondary" id="btn-artists" data-i18n="btn-artists">For Artists</button>
         </div>
-        <h3 id="membership-title" style="text-align: center; color: white; margin-bottom: 2rem;">Venue Plans
+        <h3 id="membership-title" style="text-align: center; color: white; margin-bottom: 2rem;" data-i18n="plans-venues-title">Venue Plans
         </h3>
 
         <!-- Planes para ESPACIOS -->
@@ -323,29 +321,29 @@
 
 <section class="section__container contact__container" id="contact">
     <div class="contact-form">
-        <h2 class="section__header contact-text">Contact us</h2>
+        <h2 class="section__header contact-text" data-i18n="contact-title">Contact us</h2>
         <form id="contactForm">
             <div class="form-row">
                 <div class="form-column">
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email" data-i18n="contact-email">Email</label>
                         <input type="text" id="email" name="email" placeholder="Enter your Email Address" required>
                     </div>
                     <div class="form-group">
-                        <label for="message">Message</label>
+                        <label for="message" data-i18n="contact-message">Message</label>
                         <input class="input-message" type="text" id="message" name="message"
                             placeholder="Enter your Message" required>
                     </div>
                 </div>
                 <div class="form-column">
                     <div class="form-group">
-                        <label for="phone">Telephone Number</label>
+                        <label for="phone" data-i18n="contact-phone">Telephone Number</label>
                         <input type="tel" id="phone" name="phone" placeholder="Enter your Phone Number" required>
                     </div>
                     <div class="form-group">
-                        <label for="title">Subject</label>
+                        <label for="title" data-i18n="contact-subject">Subject</label>
                         <input type="text" id="title" name="title" placeholder="Enter the Subject" required>
-                        <button class="btn button-contact-us" type="submit">Enviar</button>
+                        <button class="btn button-contact-us" type="submit" data-i18n="contact-submit">Enviar</button>
                     </div>
                 </div>
             </div>
