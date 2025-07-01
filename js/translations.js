@@ -24,6 +24,12 @@ const translations = {
         // Team
         'team-title': 'Our Development Team',
         'team-role': 'Developer',
+        'team-videos-title': 'Our Work in Action',
+        'team-videos-description': 'Watch our development team showcase the platform and explain our vision for connecting musicians with venues.',
+        'video-1-title': 'About the Team',
+        'video-1-description': 'Meet our development team and learn about their background, experience, and passion for connecting the music community.',
+        'video-2-title': 'About the Product',
+        'video-2-description': 'Discover how TocaAquí works, its key features, and how it revolutionizes the way musicians connect with venues.',
         
         // Features
         'features-title': 'Key tools to play live without complications',
@@ -73,6 +79,12 @@ const translations = {
         // Equipo
         'team-title': 'Nuestro Equipo de Desarrollo',
         'team-role': 'Desarrollador',
+        'team-videos-title': 'Nuestro Trabajo en Acción',
+        'team-videos-description': 'Mira a nuestro equipo de desarrollo mostrar la plataforma y explicar nuestra visión para conectar músicos con espacios.',
+        'video-1-title': 'Sobre el Equipo',
+        'video-1-description': 'Conoce a nuestro equipo de desarrollo y aprende sobre su experiencia, trayectoria y pasión por conectar la comunidad musical.',
+        'video-2-title': 'Sobre el Producto',
+        'video-2-description': 'Descubre cómo funciona TocaAquí, sus características principales y cómo revoluciona la forma en que los músicos se conectan con espacios.',
         
         // Características
         'features-title': 'Herramientas clave para tocar en vivo sin complicaciones',
